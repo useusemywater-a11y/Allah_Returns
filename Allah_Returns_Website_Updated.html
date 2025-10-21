@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allah Returns</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('Logo.png') center/cover fixed no-repeat;
+      overflow-x: hidden;
+      color: #fff;
+    }
+    .moon-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(173,216,230,0.4), transparent 70%);
+      animation: glow 6s ease-in-out infinite alternate;
+      z-index: 1;
+    }
+    @keyframes glow {
+      from { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+      to { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+    }
+    .parallax {
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen text-center relative">
+  <div class="moon-glow"></div>
+  <div class="relative z-10 flex flex-col items-center justify-center space-y-6 p-6">
+    <img src="assetsbanner.jpg" alt="Allah Returns Banner" class="rounded-3xl shadow-2xl w-72 md:w-96 animate-pulse" />
+    <h1 class="text-4xl md:text-5xl font-extrabold text-yellow-300 drop-shadow-lg">Allah Returns</h1>
+    <p class="text-lg italic text-gray-200">"Allah Of Allahest Creations!"</p>
+    <div class="flex space-x-6 mt-4">
+      <a href="https://www.youtube.com/@AllahReturns/shorts" target="_blank" class="px-6 py-2 rounded-2xl bg-yellow-400 text-black font-semibold shadow-md hover:scale-105 transition-transform">Shorts</a>
+      <a href="https://www.youtube.com/@AllahReturns/playlists" target="_blank" class="px-6 py-2 rounded-2xl bg-yellow-400 text-black font-semibold shadow-md hover:scale-105 transition-transform">Playlists</a>
+      <a href="https://www.youtube.com/@AllahReturns/community" target="_blank" class="px-6 py-2 rounded-2xl bg-yellow-400 text-black font-semibold shadow-md hover:scale-105 transition-transform">Posts</a>
+    </div>
+  </div>
+  <footer class="absolute bottom-4 text-sm text-gray-300 z-10">
+    ©2025 SanVyom, All Rights Reserved.
+  </footer>
+</body>
+</html>
